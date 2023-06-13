@@ -1,11 +1,8 @@
-@font-face {
-    font-family: fa;
-    src: url("assets/Roboto_Condensed/RobotoCondensed-Regular.ttf") format=("truetype");
-}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
 
 body {
     margin: 0;
-    font-family: "RobotoCondensed-Regular", sans-serif;
+    font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 /* Left side of website */
@@ -36,22 +33,101 @@ body {
     margin: 0;
     color: #EEEEEE;
     text-align: center;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 40%;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
     padding: 10px;
 }
 
 .image-credit {
     position: absolute;
     bottom: 10px;
-    color: #EEEEEE;
+    left: 33%;
+    color: #3b3b3b;
     margin: 0;
     text-align: center;
-    width: 30%;
-    background-color: rgba(0, 0, 0, 0.5);
+    width: 32%;
+    font-weight: bold;
 }
+
+/* Right side */
 
 #form-container {
     width: 60%;
-    background-color: rgb(43, 51, 76);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #faf9f7;
+}
+
+.form-header {
+    background: rgb(30, 33, 35);
+    flex: 1;
+    padding: 25px 4vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+}
+
+.form-input {
+    background: rgb(23, 25, 26);
+    flex: 1;
+    padding: 0 4vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.submit-container {
+    background: rgb(30, 33, 35);
+    flex: 1;
+    padding: 0 4vh;
+    padding-top: 25px;
+}
+
+.header-text {
+    margin: 5px 0;
+    width: 51vw;
+    font-size: 18px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    width: 50vw;
+}
+
+form label {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+form input {
+    border-radius: 8px;
+    border: none;
+    padding: 5px;
+    width: 100%;
+
+}
+
+.submit {
+    padding: 0.8rem 1.3rem;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    background-color: #829ab1;
+    color: black;
+    border: none;
+}
+
+.submit:hover {
+    background-color: #627d98;
+}
+
+a {
+    color: red;
+}
+
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
 }
